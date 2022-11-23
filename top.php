@@ -25,8 +25,11 @@
         h1,
         h2,
         p,
+        ul,
+        li,
         button {
             font-family: Mulish;
             font-style: normal;
+            margin: 0;
         }
     </style>

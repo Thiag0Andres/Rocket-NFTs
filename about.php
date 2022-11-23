@@ -1,17 +1,17 @@
-<div class="container-about">
+<div id="about" class="container-about">
     <div class="content">
         <div class="info-values">
-            <div>
+            <div class="content-values">
                 <span>10K+</span>
-                <p>Artes</p>
+                <p class="text-info">Artes</p>
             </div>
-            <div>
+            <div class="content-values">
                 <span>200+</span>
-                <p>Vendas</p>
+                <p class="text-info">Vendas</p>
             </div>
-            <div>
+            <div class="content-values">
                 <span>20</span>
-                <p>Artistas</p>
+                <p class="text-info">Artistas</p>
             </div>
 
         </div>
@@ -34,6 +34,9 @@
 <style>
     .container-about {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-bottom: 1px solid #5A5757;
     }
 
@@ -42,12 +45,40 @@
         display: flex;
     }
 
+    .container-about .content .info-values {
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-right: 1px solid #5A5757;
+        padding-top: 70px;
+    }
+
+    .container-about .content .info-values .content-values {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-about .content .info-values span {
+        font-weight: 600;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+
+    .container-about .content .info-values .text-info {
+        font-weight: 600;
+        font-size: 20px;
+        color: #5A5757;
+    }
+
     .container-about .content .info-texts {
-        max-width: 1158px;
+        max-width: 1150px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-left: 1px solid #5A5757;
+        padding-top: 70px;
     }
 
     .container-about .content .info-texts .content-texts {
@@ -60,6 +91,10 @@
         max-width: 400px;
         font-size: 18px;
         color: #FFFFFF;
+    }
+
+    .container-about .content .info-texts .content-texts a:hover {
+        color: #FF5B50
     }
 
     .container-about .content .info-texts img {
