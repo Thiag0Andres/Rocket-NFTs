@@ -5,7 +5,7 @@
             <a class="header-link" href="#about">Sobre</a>
             <a class="header-link" href="#">Populares da semana</a>
             <a class="header-link" href="#">Melhores artistas</a>
-            <a class="header-link" href="#">Fale conosco</a>
+            <a class="header-link" href="#footer">Fale conosco</a>
         </nav>
     </div>
     <div class="content">
@@ -86,7 +86,7 @@
     }
 
     .container-header .header nav .header-link:hover {
-        color: #FF5B50
+        color: #4507A1
     }
 
     .container-header .content {

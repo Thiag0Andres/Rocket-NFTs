@@ -94,7 +94,7 @@
     }
 
     .container-about .content .info-texts .content-texts a:hover {
-        color: #FF5B50
+        color: #4507A1
     }
 
     .container-about .content .info-texts img {
