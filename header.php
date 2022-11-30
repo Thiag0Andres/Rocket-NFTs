@@ -4,7 +4,7 @@
         <nav>
             <a class="header-link" href="#about">Sobre</a>
             <a class="header-link" href="#">Populares da semana</a>
-            <a class="header-link" href="#">Melhores artistas</a>
+            <a class="header-link" href="#artists">Melhores artistas</a>
             <a class="header-link" href="#footer">Fale conosco</a>
         </nav>
     </div>
@@ -86,7 +86,7 @@
     }
 
     .container-header .header nav .header-link:hover {
-        color: #4507A1
+        color: #FF5B50
     }
 
     .container-header .content {
@@ -131,6 +131,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
         gap: 20px;
+        list-style: none;
     }
 
     .container-header .list-img .list-item {

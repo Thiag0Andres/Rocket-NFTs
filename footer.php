@@ -7,12 +7,12 @@
     </div>
     <div class="line"></div>
     <div class="middle">
-        <form class="form-container">
+        <form class="form-container" action="./contatodb.php" method="post">
             <h2 class="title-form">Para mais informações fale conosco</h2>
             <input type="text" name="nome" placeholder="Nome" />
             <input type="email" name="email" placeholder="nft@email.com.br" />
-            <textarea name="mensagem" rows="4"></textarea>
-            <button class="send-button" disabled>Enviar</button>
+            <textarea name="assunto" rows="4"></textarea>
+            <button type="submit" class="send-button">Enviar</button>
         </form>
     </div>
     <div class="line"></div>
@@ -56,7 +56,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #4507A1;
+        background-color: #FF5B50;
         border: none;
         text-decoration: none;
     }
@@ -73,7 +73,7 @@
     .container-footer .middle {
         max-width: 1280px;
         width: 100%;
-        margin-top: 65px;
+        padding-top: 65px;
     }
 
     .container-footer .middle .form-container {
@@ -106,7 +106,7 @@
 
     .container-footer .middle .form-container input:focus {
         font-size: 20px;
-        border: 1px solid #4507A1;
+        border: 1px solid #FF5B50;
         box-shadow: none;
     }
 
@@ -115,6 +115,7 @@
         color: #5A5757;
         background-color: #0e0e0e;
         border: none;
+        padding: 20px;
         margin-bottom: 15px;
     }
 
@@ -134,7 +135,7 @@
 
     .container-footer .middle .form-container .send-button:hover {
         color: #ffffff;
-        background-color: #4507A1;
+        background-color: #FF5B50;
     }
 
     .container-footer .base {
@@ -157,7 +158,7 @@
     }
 
     .container-footer .base .link:hover {
-        color: #4507A1;
+        color: #FF5B50;
     }
 
     .container-footer .base .icons {

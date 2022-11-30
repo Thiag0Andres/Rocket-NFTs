@@ -1,3 +1,7 @@
+<?php
+include("config.inc.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,5 +36,6 @@
             font-family: Mulish;
             font-style: normal;
             margin: 0;
+            padding: 0;
         }
     </style>

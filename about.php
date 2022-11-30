@@ -1,8 +1,20 @@
+<?php
+$busca = "Select * from artista order by id";
+$todos = mysqli_query($conn, $busca);
+$dados = mysqli_fetch_array($todos);
+$artists_len = count($dados);
+$photographs_len = 0;
+
+while ($dados = mysqli_fetch_array($todos)) {
+    $photographs_len += $dados['fotografias'];
+};
+?>
+
 <div id="about" class="container-about">
     <div class="content">
         <div class="info-values">
             <div class="content-values">
-                <span>10K+</span>
+                <span><?= $photographs_len; ?></span>
                 <p class="text-info">Artes</p>
             </div>
             <div class="content-values">
@@ -10,7 +22,7 @@
                 <p class="text-info">Vendas</p>
             </div>
             <div class="content-values">
-                <span>20</span>
+                <span><?= $artists_len; ?></span>
                 <p class="text-info">Artistas</p>
             </div>
 
@@ -84,7 +96,7 @@
     .container-about .content .info-texts .content-texts {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
     }
 
     .container-about .content .info-texts .content-texts .text {
@@ -94,7 +106,7 @@
     }
 
     .container-about .content .info-texts .content-texts a:hover {
-        color: #4507A1
+        color: #FF5B50
     }
 
     .container-about .content .info-texts img {
