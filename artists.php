@@ -3,20 +3,21 @@
         <h1 class="title">Melhores <span style="color: #FF5B50;">artistas</span></h1>
         <ul class="list-img">
             <?php
-            $busca = "Select * from artista order by id";
-
+            $busca = "Select * from artista order by id desc limit 6";
             $todos = mysqli_query($conn, $busca);
+            $count = 1;
 
             while ($dados = mysqli_fetch_array($todos)) {
             ?>
                 <li class="list-item">
-                    <img src="assets/galeria-1.png" alt="Logo">
+                    <img src=<?= "assets/artista-$count.png" ?> alt="">
                     <div class="content-text">
                         <p class="text"><?= $dados['nome']; ?></p>
                         <p class="text-info"><?= $dados['fotografias']; ?> Fotografias</p>
                     </div>
                 </li>
             <?php
+                $count++;
             };
             ?>
         </ul>
@@ -30,7 +31,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 150px 0;
+        padding: 0 0 150px 0;
     }
 
     .container-artists .content {

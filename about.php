@@ -1,20 +1,15 @@
 <?php
-$busca = "Select * from artista order by id";
-$todos = mysqli_query($conn, $busca);
-$dados = mysqli_fetch_array($todos);
-$artists_len = count($dados);
-$photographs_len = 0;
-
-while ($dados = mysqli_fetch_array($todos)) {
-    $photographs_len += $dados['fotografias'];
-};
+$query1 = mysqli_query($conn, "select COUNT(*) AS total FROM artista");
+$total_artists = mysqli_fetch_assoc($query1);
+$query2 = mysqli_query($conn, "select COUNT(*) AS total FROM arte");
+$total_arts = mysqli_fetch_assoc($query2);
 ?>
 
 <div id="about" class="container-about">
     <div class="content">
         <div class="info-values">
             <div class="content-values">
-                <span><?= $photographs_len; ?></span>
+                <span><?= $total_arts['total']; ?></span>
                 <p class="text-info">Artes</p>
             </div>
             <div class="content-values">
@@ -22,7 +17,7 @@ while ($dados = mysqli_fetch_array($todos)) {
                 <p class="text-info">Vendas</p>
             </div>
             <div class="content-values">
-                <span><?= $artists_len; ?></span>
+                <span><?= $total_artists['total']; ?></span>
                 <p class="text-info">Artistas</p>
             </div>
 

@@ -3,7 +3,7 @@
         <img src="assets/logo.svg" alt="Logo">
         <nav>
             <a class="header-link" href="#about">Sobre</a>
-            <a class="header-link" href="#">Populares da semana</a>
+            <a class="header-link" href="#arts">Populares da semana</a>
             <a class="header-link" href="#artists">Melhores artistas</a>
             <a class="header-link" href="#footer">Fale conosco</a>
         </nav>
@@ -34,14 +34,14 @@
             <img class="badge-img" src="assets/badge.svg" alt="">
         </div>
         <ul class="list-img">
-            <li class="list-item"><img src="assets/galeria-1.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-2.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-3.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-4.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-5.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-6.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-7.png" alt="Logo"></li>
-            <li class="list-item"><img src="assets/galeria-8.png" alt="Logo"></li>
+            <li class="list-item"><img src="assets/galeria-1.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-2.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-3.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-4.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-5.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-6.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-7.png" alt=""></li>
+            <li class="list-item"><img src="assets/galeria-8.png" alt=""></li>
         </ul>
     </div>
 
