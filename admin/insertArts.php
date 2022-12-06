@@ -1,6 +1,6 @@
 <div class="container">
   <h2 class="title-form">Inserir Artes</h2>
-  <form class="form-container" action="./insertArtsdb.php" method="post">
+  <form class="form-container" action="?pg=insertArtsdb" method="post">
     <label>Título da arte:</label>
     <input type="text" name="title" placeholder="Título" required />
     <label>Valor da arte:</label>

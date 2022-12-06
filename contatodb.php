@@ -14,5 +14,6 @@ $insert = mysqli_query($conn, $sql);
 if (!$insert) {
     echo "Ocorreu um erro ao cadastrar no banco de dados.";
 } else {
-    echo "<h3>Cadastrada com sucesso!</h3><br>";
+    echo "<h3>Mensagem cadastrada com sucesso!</h3><br>";
+    header("Refresh: 5, ./index.php");
 }

@@ -1,6 +1,6 @@
 <div class="container">
   <h2 class="title-form">Inserir Artista</h2>
-  <form class="form-container" action="./insertArtistsdb.php" method="post">
+  <form class="form-container" action="?pg=insertArtistsdb" method="post">
     <label>Nome do artista:</label>
     <input type="text" name="nome" placeholder="Nome" required />
     <label>Quantidade de fotografias:</label>

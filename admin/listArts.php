@@ -42,7 +42,7 @@ $todos = mysqli_query($conn, $busca);
                         <td><?= $dados['nome']; ?></td>
                         <td><?= $dados['title']; ?></td>
                         <td><?= $dados['amount']; ?> RKT</td>
-                        <td><a href="?pg=alterar&id=<?= $dados['id']; ?>">Editar</a></td>
+                        <td><a href="?pg=editArt&id=<?= $dados['id']; ?>">Editar</a></td>
                         <td><a href="javascript:confirmaExclusao('?pg=deleteArt&id=<?= $dados['id']; ?>')">Excluir</a></td>
                     </tr>
                 </tbody>

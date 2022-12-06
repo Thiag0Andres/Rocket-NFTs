@@ -39,7 +39,7 @@ $todos = mysqli_query($conn, $busca);
                         <td><?= $dados['id']; ?></td>
                         <td><?= $dados['nome']; ?></td>
                         <td><?= $dados['fotografias']; ?></td>
-                        <td><a href="?pg=alterar&id=<?= $dados['id']; ?>">Editar</i></a></td>
+                        <td><a href="?pg=editArtist&id=<?= $dados['id']; ?>">Editar</i></a></td>
                         <td><a href="javascript:confirmaExclusao('?pg=deleteArtist&id=<?= $dados['id']; ?>')">Excluir</a></td>
                     </tr>
                 <tbody>
