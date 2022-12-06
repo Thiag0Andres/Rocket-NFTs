@@ -16,4 +16,5 @@ if (!$insert) {
     <a href='?pg=insertArtists'>Tente Novamente</a>";
 } else {
     echo "<h3>Artista cadastrado com sucesso!</h3>";
+    header("Refresh: 5, ../admin?pg=listArtists");
 }
