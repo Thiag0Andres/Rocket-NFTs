@@ -8,7 +8,7 @@
 
 <?php
 
-$busca = "Select * from arte order by id";
+$busca = "Select * from artista INNER JOIN arte ON arte.artistId = artista.id";
 
 $todos = mysqli_query($conn, $busca);
 
@@ -18,7 +18,7 @@ $todos = mysqli_query($conn, $busca);
         <div class="content-top">
             <h1 class="title">Artes</h1>
             <p>
-                <a class="link" href="?pg=inserir">Inserir Artes</a>
+                <a class="link" href="?pg=insertArts">Inserir Artes</a>
             </p>
         </div>
 
@@ -26,7 +26,9 @@ $todos = mysqli_query($conn, $busca);
             <thead>
                 <tr>
                     <td>Id</td>
-                    <td>Titulo</td>
+                    <td>Artista Id</td>
+                    <td>Artista</td>
+                    <td>Título</td>
                     <td>Valor</td>
                     <td>Alterar</td>
                     <td>Excluir</td>
@@ -36,6 +38,8 @@ $todos = mysqli_query($conn, $busca);
                 <tbody>
                     <tr>
                         <td><?= $dados['id']; ?></td>
+                        <td><?= $dados['artistId']; ?></td>
+                        <td><?= $dados['nome']; ?></td>
                         <td><?= $dados['title']; ?></td>
                         <td><?= $dados['amount']; ?> RKT</td>
                         <td><a href="?pg=alterar&id=<?= $dados['id']; ?>"><i class="glyphicon glyphicon-pencil"></i></a></td>

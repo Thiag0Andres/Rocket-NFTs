@@ -18,7 +18,7 @@ $todos = mysqli_query($conn, $busca);
         <div class="content-top">
             <h1 class="title">Artistas</h1>
             <p>
-                <a class="link" href="?pg=inserir">Inserir Artista</a>
+                <a class="link" href="?pg=insertArtists">Inserir Artista</a>
             </p>
         </div>
 
@@ -26,7 +26,7 @@ $todos = mysqli_query($conn, $busca);
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Titulo</th>
+                    <th>Nome</th>
                     <th>Fotografias</th>
                     <th>Alterar</th>
                     <th>Excluir</th>

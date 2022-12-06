@@ -9,9 +9,9 @@
     <div class="middle">
         <form class="form-container" action="./contatodb.php" method="post">
             <h2 class="title-form">Para mais informações fale conosco</h2>
-            <input type="text" name="nome" placeholder="Nome" />
-            <input type="email" name="email" placeholder="nft@email.com.br" />
-            <textarea name="assunto" rows="4"></textarea>
+            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="nft@email.com.br" required />
+            <textarea name="assunto" rows="4"></textarea required >
             <button type="submit" class="send-button">Enviar</button>
         </form>
     </div>
@@ -105,9 +105,9 @@
     }
 
     .container-footer .middle .form-container input:focus {
-        font-size: 20px;
-        border: 1px solid #FF5B50;
-        box-shadow: none;
+        border: 2px solid #FF5B50;
+        box-shadow: 0 0 0 0;
+        outline: 0;
     }
 
     .container-footer .middle .form-container textarea {
@@ -117,6 +117,12 @@
         border: none;
         padding: 20px;
         margin-bottom: 15px;
+    }
+
+    .container-footer .middle .form-container textarea:focus {
+        border: 2px solid #FF5B50;
+        box-shadow: 0 0 0 0;
+        outline: 0;
     }
 
     .container-footer .middle .form-container .send-button {

@@ -3,7 +3,7 @@
         <h1 class="title"><span style="color: #FF5B50;">Populares</span> da semana</h1>
         <ul class="list-img">
             <?php
-            $busca = "select * from arte INNER JOIN artista ON artista.id = arte.artistId";
+            $busca = "Select * from artista INNER JOIN arte ON arte.artistId = artista.id order by arte.id desc limit 4";
             $todos = mysqli_query($conn, $busca);
             $count = 1;
 
